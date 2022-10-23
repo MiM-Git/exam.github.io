@@ -1,0 +1,155 @@
+.class-card {
+    background-color: rgb(197, 200, 198);
+    border: 1px solid #333;
+    border-radius: 10px;
+    transition: all ease-in-out 0.2s;
+}
+
+.class-card:hover {
+    background-color: rgb(169, 170, 169);
+}
+
+.container-fluid {
+    position: relative;
+}
+
+.rtl {
+    direction: rtl;
+}
+.teach-icon{
+    font-size: 50px;
+    color: wheat;
+}
+.container-fluid .card {
+    position: relative;
+    height: 400px;
+    background: #282c34;
+    margin: 10px 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+.container-fluid .card .imgBx {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 150px;
+    transition: 0.5s;
+}
+
+.container-fluid .card:hover .imgBx {
+    top: 0%;
+    transform: translateY(0%);
+
+}
+.container-fluid .card .imgBx svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    width: 270px;
+}
+
+.container-fluid .card .contentBx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+}
+
+.container-fluid .card:hover .contentBx {
+    height: 260px;
+}
+
+.container-fluid .card .contentBx h3 {
+    position: relative;
+    letter-spacing: 1px;
+    color: wheat;
+    margin: 0;
+}
+
+.container-fluid .card .contentBx .size,
+.container-fluid .card .contentBx .color {
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.container-fluid .card:hover .contentBx .size {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+
+.container-fluid .card:hover .contentBx .color {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.6s;
+}
+
+.container-fluid .card .contentBx .size h4,
+.container-fluid .card .contentBx .color h4 {
+    color: wheat;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.container-fluid .card .contentBx .size span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: wheat;
+    margin: 0 5px;
+    transition: 0.5s;
+    color: #111;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container-fluid .card .contentBx .size span:hover {
+    background: wheat;
+}
+
+.container-fluid .card .contentBx .color span {
+    width: 20px;
+    height: 20px;
+    background: #ff0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.container-fluid .card .contentBx a {
+    display: inline-block;
+    padding: 10px 10px;
+    cursor: pointer;
+    background: wheat;
+    border-radius: 4px;
+    margin: 10px 5px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #282c34;
+    opacity: 0;
+    transform: translateY(-75px);
+    transition: 0.5s;
+}
+
+.container-fluid .card:hover .contentBx a {
+    opacity: 1;
+    transform: translateY(-75px);
+    transition-delay: 0.75s;
+
+}

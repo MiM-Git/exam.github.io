@@ -1,0 +1,180 @@
+.user-nav {
+    position: fixed;
+    width: 100%;
+    background: #282c34;
+    color: wheat;
+    padding: 0 10px;
+    z-index: 101;
+}
+
+.user-info {
+    float: right;
+    font-size: 1.2rem;
+    line-height: 3;
+    direction: rtl;
+}
+
+.user-name {
+    margin: 0 5px;
+}
+
+.addExamBtn{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    background-color: wheat;
+    width: inherit;
+    border-radius: 100%;
+    padding: 10px;
+    z-index: 2
+}
+.logout-button {
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    font-weight: 500;
+    margin: 10px 10px;
+    padding: 5px 10px;
+    box-shadow: 0 0 20px #282c34;
+    transition: 0.4s;
+    color: wheat;
+    background-color: #282c34;
+    border: 1px solid wheat;
+}
+
+.logout-button:hover {
+    box-shadow: 0 0 20px wheat;
+}
+
+.user-setting-icon {
+    cursor: pointer;
+}
+
+.setting-item {
+    color: wheat;
+    margin: 5px 0;
+    border-radius: 3px;
+    padding: 0 5px;
+}
+
+.setting-item:hover {
+    transition: all ease-in-out 1s;
+    border-bottom: 1px solid wheat;
+}
+
+.pane {
+    position: absolute;
+    top: 65px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #282c34;
+    transition: 0.4s;
+    color: #282c34;
+    background-color: #282c34;
+    border: 1px solid wheat;
+    direction: rtl;
+    text-align: right;
+    list-style: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.side-menu {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    z-index: 0;
+    background-color: #282c34;
+    display: none;
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+.open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.menu-ul {
+    padding: 0;
+    width: 100%;
+}
+
+.menu-item-side {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.menu-item-side:hover {
+    background-color: #525b6e;
+    transition: all ease-in 0.2s;
+}
+
+.menu-links {
+    text-decoration: none;
+    color: wheat;
+    font-size: 1.2rem;
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.menu-links:hover {
+    color: rgb(255, 206, 114);
+    background-color: #282c3400
+}
+
+.close-sidebar-btn {
+    color: white;
+    position: absolute;
+    left: 10px;
+    top: 70px;
+    font-size: 35px;
+}
+
+.open-sidebar-menu {
+    color: white;
+    font-size: 35px;
+    margin-left: 50px;
+}
+
+.dashboard-body {
+    color: #282c34;
+    padding-top: 60px;
+    text-align: right;
+    z-index: 98;
+}
+
+.body-padding {
+    padding-right: 250px;
+    animation: fadeIn 0.2s ease-in-out;
+}
+.no-class-err{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #282c34;
+    direction: rtl;
+    height: 83vh;
+    font-size: 25px;
+}
+.zzz-icon{
+    font-size: 65px;
+    margin: 5px 0;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(2rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

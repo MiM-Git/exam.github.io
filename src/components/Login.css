@@ -1,0 +1,148 @@
+.login-form {
+    background: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    direction: rtl;
+}
+
+.class-form {
+    background: #282c34;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 30px 0;
+    direction: rtl;
+    border-radius: 20px;
+}
+.form-label {
+    display: block;
+}
+
+.group {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.login-data,.login-pass {
+    font-size: 18px;
+    background: #282c34;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    color: wheat;
+    border: none;
+    border-bottom: 1px solid wheat;
+}
+
+input:focus {
+    outline: none;
+}
+
+.login-label {
+    color: wheat;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    right: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+.login-data:focus~label,
+.login-data:valid~label,.login-pass:focus~label,
+.login-pass:valid~label {
+    top: -20px;
+    font-size: 14px;
+    color: wheat;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 300px;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #282c34;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+input:focus~.bar:before,
+input:focus~.bar:after {
+    width: 50%;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+
+.login-button {
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    font-weight: 600;
+    margin: 0 10px;
+    padding: 10px 20px;
+    box-shadow: 0 0 20px #282c34;
+    transition: 0.4s;
+    color: #282c34;
+    background-color: wheat;
+    border: 1px solid #282c34;
+}
+
+.login-button:hover {
+    box-shadow: 0 0 20px wheat;
+}
+.register-button{
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    font-weight: 600;
+    margin: 0 10px;
+    padding: 10px 20px;
+    box-shadow: 0 0 20px #282c34;
+    transition: 0.4s;
+    color: wheat;
+    background-color: #282c34;
+    border: 1px solid wheat;   
+}
+.register-button:hover {
+    box-shadow: 0 0 20px wheat;
+}
+.login-error{
+    color: red;
+    margin:  10px 0;
+}

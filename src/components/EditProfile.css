@@ -1,0 +1,94 @@
+.page-body{
+    background: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    direction: rtl;
+}
+.back-icon{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+.edit-data,.edit-pass {
+    font-size: 18px;
+    background: #282c34;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    color: wheat;
+    border: none;
+    border-bottom: 1px solid wheat;
+}
+
+input:focus {
+    outline: none;
+}
+
+.edit-label {
+    color: wheat;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    right: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+.edit-data:focus~label,
+.edit-data:valid~label,.edit-pass:focus~label,
+.edit-pass:valid~label {
+    top: -20px;
+    font-size: 14px;
+    color: wheat;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 300px;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #282c34;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+input:focus~.bar:before,
+input:focus~.bar:after {
+    width: 50%;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+

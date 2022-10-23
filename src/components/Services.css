@@ -1,0 +1,36 @@
+.icon-holder{
+    width: inherit;
+}
+.bold{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin: 20px 0;
+}
+.part{
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+.part:hover{
+    box-shadow: 0 5px 10px #00000020;
+    transition: all ease 0.5s;
+}
+.center-div{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.service-info{
+    font-size: 1.2rem;
+    text-align: center;    
+}
+.services-sec{
+    background-color: wheat;
+    color: #282c34;
+    width: 100%;
+    padding: 20px;
+}
+.icon-holder{
+    width: 318px;
+    height: 212px;
+}

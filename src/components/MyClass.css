@@ -1,0 +1,22 @@
+.first-division button {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    color: rgb(0, 208, 255);
+    border: 1px solid rgb(0, 208, 255);
+  }
+  
+  .second-division button {
+    color: red;
+    border: 1px solid red;
+  }.services {
+    display: flex;
+    justify-content: space-between;
+  }
+  .first-division {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px 0.5rem 0;
+    width: 100%;
+  }

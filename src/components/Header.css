@@ -1,0 +1,10 @@
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 5px 10px #00000020;
+}
+.site-logo{
+    position: absolute;
+    left: 0;
+}

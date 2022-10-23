@@ -1,0 +1,83 @@
+body {
+  background-color: #f1eee9;
+  overflow-x: hidden;
+}
+
+.header {
+  background-color: #282c34;
+  color: white;
+}
+
+.topnav {
+  padding: 10px;
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+  direction: rtl;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #282c34;
+}
+
+.topnav a {
+  display: block;
+  color: wheat;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 10px;
+  font-family: IranSans;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.menu-item {
+  display: inline-block;
+  list-style: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+    padding-top: 50px;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+  }
+  .banner-title{
+    margin-top: 85px;
+  }
+
+  .menu-item {
+    display: block;
+    text-align: center;
+  }
+}

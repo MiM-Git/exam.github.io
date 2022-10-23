@@ -1,0 +1,22 @@
+.footer{
+    background-color: #282c34;
+    width: 100%;
+    color: wheat;
+    padding: 20px
+}
+.contact-us{
+    text-align: center;
+}
+.contact-us-title{
+    margin: 0;
+    margin-bottom: 10px;
+}
+.contact-us-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-info{
+    text-align: right;
+    direction: rtl;
+}
